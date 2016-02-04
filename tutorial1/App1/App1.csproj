@@ -107,14 +107,13 @@
     <None Include="App1_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\Internet-of-Things-360.png" />
+    <Content Include="Assets\logo_350x350.jpg" />
+    <Content Include="Assets\StoreLogo.png" />
     <Content Include="Properties\Default.rd.xml" />
-    <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
     <Content Include="Assets\Square150x150Logo.scale-200.png" />
     <Content Include="Assets\Square44x44Logo.scale-200.png" />
-    <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
-    <Content Include="Assets\StoreLogo.png" />
-    <Content Include="Assets\Wide310x150Logo.scale-200.png" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -127,6 +126,12 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <SDKReference Include="DevExpress.Core, version=15.2">
+      <Name>DevExpress.Core</Name>
+    </SDKReference>
+    <SDKReference Include="DevExpress.Visualization, Version=15.2">
+      <Name>DevExpress.Visualization</Name>
+    </SDKReference>
     <SDKReference Include="WindowsIoT, Version=10.0.10586.0">
       <Name>Windows IoT Extensions for the UWP</Name>
     </SDKReference>

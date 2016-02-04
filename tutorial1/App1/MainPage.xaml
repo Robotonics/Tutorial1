@@ -1,13 +1,17 @@
 ﻿<Page
-    x:Class="App1.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:App1"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    x:Class="App1.MainPage"
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Image x:Name="image" HorizontalAlignment="Center" Width="350" Margin="-4,54,294,-44"  VerticalAlignment="Top" CanDrag="True" Source="Assets/Internet-of-Things-360.png"/>
+
+        <Image x:Name="image2" HorizontalAlignment="Center" Width="201" Margin="387,0,52,133"  VerticalAlignment="Bottom" CanDrag="True" Source="Assets/logo_350x350.jpg" Height="182"/>
+
 
     </Grid>
 </Page>
