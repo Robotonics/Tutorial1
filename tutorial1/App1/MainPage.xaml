@@ -8,9 +8,8 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Image x:Name="image" HorizontalAlignment="Center" Width="350" Margin="-4,54,294,-44"  VerticalAlignment="Top" CanDrag="True" Source="Assets/Internet-of-Things-360.png"/>
 
-        <Image x:Name="image2" HorizontalAlignment="Center" Width="201" Margin="387,0,52,133"  VerticalAlignment="Bottom" CanDrag="True" Source="Assets/logo_350x350.jpg" Height="182"/>
+        <Image x:Name="image2" HorizontalAlignment="Center" Width="100" Margin="47,0,493,243"  VerticalAlignment="Bottom" CanDrag="True" Source="Assets/logo_350x350.jpg" Height="93"/>
 
 
     </Grid>

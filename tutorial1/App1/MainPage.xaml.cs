@@ -12,8 +12,8 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using IoTHelpers.Gpio.Modules;          //added for access to gpio
 
-// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
 namespace App1
 {
@@ -22,9 +22,13 @@ namespace App1
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        private Sr04UltrasonicDistanceSensor ultrasonic;
         public MainPage()
         {
             this.InitializeComponent();
+            ultrasonic = new Sr04UltrasonicDistanceSensor(triggerPinNumber: 12, echoPinNumber: 15);
         }
+
+
     }
 }
