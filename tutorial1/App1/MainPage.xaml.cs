@@ -11,9 +11,9 @@ using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Navigation;
+using Windows.UI.Xaml.Navigation; 
 using IoTHelpers.Gpio.Modules;          //added for access to gpio
-
+using System.Threading.Tasks;
 
 namespace App1
 {
@@ -23,11 +23,23 @@ namespace App1
     public sealed partial class MainPage : Page
     {
         private Sr04UltrasonicDistanceSensor ultrasonic;
-        public MainPage()
+        public dynamic distance;
+        public MainPage() 
         {
             this.InitializeComponent();
-            ultrasonic = new Sr04UltrasonicDistanceSensor(triggerPinNumber: 12, echoPinNumber: 15);
+            ultrasonic = new Sr04UltrasonicDistanceSensor(triggerPinNumber: 12, echoPinNumber: 16);
+            ultrasonic.DistanceChanged += ultrasonic_DistanceChanged;
+                        
         }
+
+        public void ultrasonic_DistanceChanged(object sender, EventArgs e)
+        {
+         
+            double? dist = ultrasonic.GetDistance();
+            distance = dist.ToString();
+
+        }
+
 
 
     }

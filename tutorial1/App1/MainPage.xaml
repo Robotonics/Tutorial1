@@ -4,12 +4,14 @@
     xmlns:local="using:App1"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:c="using:App1.Converters"
     x:Class="App1.MainPage"
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
         <Image x:Name="image2" HorizontalAlignment="Center" Width="100" Margin="47,0,493,243"  VerticalAlignment="Bottom" CanDrag="True" Source="Assets/logo_350x350.jpg" Height="93"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="280,67,0,0" TextWrapping="Wrap" DataContext= "{Binding ElementName=distance}"  VerticalAlignment="Top" Width="95"  />
 
 
     </Grid>
